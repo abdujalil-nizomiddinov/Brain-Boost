@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { useRecipes } from "../hooks/useRecipes";
+import { Link } from "react-router-dom";
 
 function Recipes() {
   const [searchValue, setSearchValue] = useState("");
@@ -247,9 +248,14 @@ function Recipes() {
                               {recipe.prepMinutes} mins
                             </span>
                           </div>
-                          <button className="btn fbb-2 w-full h-12 p">
-                            View Recipe
-                          </button>
+                          <Link
+                            to={`/details/${recipe.id}`}
+                            className="w-full p"
+                          >
+                            <button className="btn fbb-2 w-full h-12 p">
+                              View Recipe
+                            </button>
+                          </Link>
                         </div>
                       </div>
                     </li>
@@ -258,10 +264,8 @@ function Recipes() {
               </ul>
             ) : (
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="flex items-center justify-center w-80 h-20 bg-white shadow-[0px_0px_2px_0.1px_black] rounded-lg">
-                  <h2 className="text-3xl tracking-[10px]">
-                    No recipes found.
-                  </h2>
+                <div className="flex items-center justify-center w-90 h-20 bg-white shadow-[0px_0px_2px_0.1px_black] rounded-lg">
+                  <h2 className="text-xl tracking-[8px]">No recipes found.</h2>
                 </div>
               </div>
             )}

@@ -8,8 +8,8 @@ export function useRecipes({ prepMinutes, cookMinutes, search, limit } = {}) {
   useEffect(() => {
     setLoading(true);
     const url = new URL("https://json-api.uz/api/project/recipes/recipes");
-    if (prepMinutes) url.searchParams.append("prepMinutes", prepMinutes);
-    if (cookMinutes) url.searchParams.append("cookMinutes", cookMinutes);
+    if (prepMinutes || prepMinutes === 0) url.searchParams.append("prepMinutes", prepMinutes);
+    if (cookMinutes || cookMinutes === 0) url.searchParams.append("cookMinutes", cookMinutes);
     if (search) url.searchParams.append("slug", search);
     if (limit) url.searchParams.append("limit", limit);
 
