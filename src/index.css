@@ -1,0 +1,509 @@
+@import "tailwindcss";
+
+/* -------------------- >>>>> "🔻" <<<<< -------------------- */
+/* ==================== <<->> "🔸" <<->> ==================== */
+/* .... */
+/* -------------------- <<<<< "🔺" >>>>> -------------------- */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+
+/* ..... */
+/* -------------------- <<<<< "🔺" >>>>> -------------------- */ /* Start */
+/* -------------------- >>>>> "🔻" <<<<< -------------------- */ /* End */
+/* ==================== <<->> "🔸" <<->> ==================== */ /* Separator */
+/* .... */ /* Comment */
+
+/* ..Font Family.. */
+/* -------------------- <<<<< "🔺" >>>>> -------------------- */
+
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/nunito-v31-latin-200.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/nunito-v31-latin-300.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nunito-v31-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/nunito-v31-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/nunito-v31-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/nunito-v31-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/nunito-v31-latin-800.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/nunito-v31-latin-900.woff2") format("woff2");
+}
+/* -------------------- >>>>> "🔻" <<<<< -------------------- */
+/* ==================== <<->> "🔸" <<->> ==================== */
+/* ..Root and Zero Style.. */
+/* -------------------- <<<<< "🔺" >>>>> -------------------- */
+:root {
+  --n900: #163a34;
+  --n600: #395852;
+  --n300: #d0dcd9;
+  --n200: #e0e6e3;
+  --n100: #f6f5f1;
+  --n0: #ffffff;
+  --o500: #fe9f6b;
+  --t500: #49ac9b;
+  --i500: #6970d8;
+
+  --fs-6xl: 72px;
+  --fs-5xl: 64px;
+  --fs-4xl: 52px;
+  --fs-3xl: 48px;
+  --fs-2xl: 40px;
+  --fs-xl: 32px;
+  --fs-lg: 24px;
+  --fs-md: 20px;
+  --fs-sm: 18px;
+  --fs-xs: 16px;
+  --fs-xxs: 14px;
+
+  --sp-2: 2px;
+  --sp-4: 4px;
+  --sp-6: 6px;
+  --sp-8: 8px;
+  --sp-10: 10px;
+  --sp-12: 12px;
+  --sp-16: 16px;
+  --sp-20: 20px;
+  --sp-24: 24px;
+  --sp-32: 32px;
+  --sp-40: 40px;
+  --sp-48: 48px;
+  --sp-64: 64px;
+  --sp-80: 80px;
+  --sp-96: 96px;
+  --sp-112: 112px;
+  --sp-128: 128px;
+  --sp-140: 140px;
+
+  --r-0: 1px;
+  --r-4: 4px;
+  --r-6: 6px;
+  --r-8: 8px;
+  --r-10: 10px;
+  --r-12: 12px;
+  --r-16: 16px;
+  --r-20: 20px;
+  --r-24: 24px;
+  --r-full: 999px;
+}
+*,
+*::before,
+*::after {
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  cursor: url("../assets/images/cursor.png"), auto;
+}
+/* -------------------- >>>>> "🔻" <<<<< -------------------- */
+/* ==================== <<->> "🔸" <<->> ==================== */
+/* ..Tailwind ishlamadi.. */
+/* -------------------- <<<<< "🔺" >>>>> -------------------- */
+.bg-n900 {
+  background-color: #163a34;
+}
+.bg-n600 {
+  background-color: #395852;
+}
+.bg-n300 {
+  background-color: #d0dcd9;
+}
+.bg-n200 {
+  background-color: #e0e6e3;
+}
+.bg-n100 {
+  background-color: #f6f5f1;
+}
+.bg-n0 {
+  background-color: #ffffff;
+}
+.bg-o500 {
+  background-color: #fe9f6b;
+}
+.bg-t500 {
+  background-color: #49ac9b;
+}
+.bg-i500 {
+  background-color: #6970d8;
+}
+.text-n900 {
+  color: #163a34;
+}
+.text-n600 {
+  color: #395852;
+}
+.text-n300 {
+  color: #d0dcd9;
+}
+.text-n200 {
+  color: #e0e6e3;
+}
+.text-n100 {
+  color: #f6f5f1;
+}
+.text-n0 {
+  color: #ffffff;
+}
+.text-o500 {
+  color: #fe9f6b;
+}
+.text-t500 {
+  color: #49ac9b;
+}
+.text-i500 {
+  color: #6970d8;
+}
+.border-n900 {
+  border-color: #163a34;
+}
+.border-n600 {
+  border-color: #395852;
+}
+.border-n300 {
+  border-color: #d0dcd9;
+}
+.border-n200 {
+  border-color: #e0e6e3;
+}
+.border-n100 {
+  border-color: #f6f5f1;
+}
+.border-n0 {
+  border-color: #ffffff;
+}
+.border-o500 {
+  border-color: #fe9f6b;
+}
+.border-t500 {
+  border-color: #49ac9b;
+}
+.border-i500 {
+  border-color: #6970d8;
+}
+/* -------------------- >>>>> "🔻" <<<<< -------------------- */
+/* ==================== <<->> "🔸" <<->> ==================== */
+/* ..Need tag styles.. */
+/* -------------------- <<<<< "🔺" >>>>> -------------------- */
+.container {
+  max-width: 1440px;
+  padding: 0 124px;
+}
+.p {
+  cursor: pointer;
+}
+.btn {
+  background: var(--n900);
+  color: var(--n0);
+  border-radius: var(--r-12);
+  font-weight: 700;
+  font-size: var(--fs-md);
+  line-height: 140%;
+  font-style: Bold;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+.nl {
+  font-weight: 600;
+  font-style: semi-bold;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+}
+.oul {
+  position: relative;
+  display: inline-block;
+}
+.oul::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 140%;
+  height: 2px;
+  background-color: var(--o500);
+  transform: scaleX(0) translate(-200%, -3px);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.oul:hover::after {
+  transform: scaleX(1) translate(-15%, 0);
+}
+.al {
+  position: relative;
+  display: inline-block;
+}
+.al::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 140%;
+  height: 2px;
+  background-color: var(--o500);
+  transform: scaleX(1) translate(-15%, 0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.fbbb {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+}
+.fbbb::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 120%;
+  height: 120%;
+  background-color: transparent;
+  transform: scaleX(0) translate(-9%, 9%);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--n900);
+  border-radius: var(--r-8);
+  cursor: pointer;
+}
+.fbbb:focus-visible::before {
+  transform: scaleX(1) translate(-9%, 9%);
+}
+.fbb-2 {
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+.fbb-2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 101%;
+  height: 116%;
+  background-color: transparent;
+  transform: scaleX(0) translate(-0.5%, 7%);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--n900);
+  border-radius: var(--r-16);
+}
+.fbb-2:focus-visible::before {
+  transform: scaleX(1) translate(-0.5%, 7%);
+}
+.fbb {
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+.fbb::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 106%;
+  height: 120%;
+  background-color: transparent;
+  transform: scaleX(0) translate(-3%, 9%);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--n900);
+  border-radius: var(--r-16);
+}
+.fbb:focus-visible::before {
+  transform: scaleX(1) translate(-3%, 9%);
+}
+.fb {
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+.fb::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 110%;
+  height: 132%;
+  background-color: transparent;
+  transform: scaleX(0) translate(-5%, 12%);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--n900);
+  border-radius: var(--r-6);
+}
+.fb:focus-visible::before {
+  transform: scaleX(1) translate(-5%, 12%);
+}
+.al-fb:focus-visible {
+  outline: none;
+  color: var(--o500) !important;
+}
+/* -------------------- >>>>> "🔻" <<<<< -------------------- */
+/* ==================== <<->> "🔸" <<->> ==================== */
+/* ..Body and Standard tag Styles.. */
+/* -------------------- <<<<< "🔺" >>>>> -------------------- */
+body {
+  background: var(--n100);
+  color: var(--n900);
+  min-height: 100vh;
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+/* -------------------- >>>>> "🔻" <<<<< -------------------- */
+/* ==================== <<->> "🔸" <<->> ==================== */
+/* ..Checkbox.. */
+/* -------------------- <<<<< "🔺" >>>>> -------------------- */
+/* <div class="checkbox-box">
+        <label className="checkbox-label">
+          <input className="checkbox" type="radio" name="option" />
+          <span class="check"></span>
+        </label>
+        <label className="checkbox-label">
+          <input className="checkbox" type="radio" name="option" />
+          <span class="check"></span>
+        </label>
+      </div> */
+.checkbox-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  border: 4px dashed #133;
+  display: flex;
+  gap: 25px;
+}
+.checkbox-label {
+  position: relative;
+  cursor: pointer;
+}
+.checkbox {
+  display: none;
+  cursor: pointer;
+}
+.check {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--n900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.check::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--n900);
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.checkbox:checked + .check::after {
+  opacity: 1;
+  cursor: pointer;
+}
+/* -------------------- >>>>> "🔻" <<<<< -------------------- */
+/* ==================== <<->> "🔸" <<->> ==================== */
+/* ..Media.. */
+/* -------------------- <<<<< "🔺" >>>>> -------------------- */
+@media (max-width: 600px) {
+  .fbb-2::before {
+    width: 102%;
+    transform: scaleX(0) translate(-1%, 7%);
+  }
+  .fbb-2:focus-visible::before {
+    transform: scaleX(1) translate(-1%, 7%);
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+/* -------------------- >>>>> "🔻" <<<<< -------------------- */
+/* ==================== <<->> "🔸" <<->> ==================== */
+/* .... */
+/* -------------------- <<<<< "🔺" >>>>> -------------------- */
