@@ -257,7 +257,13 @@ function Recipes() {
                 })}
               </ul>
             ) : (
-              <p>No recipes found.</p>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="flex items-center justify-center w-80 h-20 bg-white shadow-[0px_0px_2px_0.1px_black] rounded-lg">
+                  <h2 className="text-3xl tracking-[10px]">
+                    No recipes found.
+                  </h2>
+                </div>
+              </div>
             )}
           </>
         )}
