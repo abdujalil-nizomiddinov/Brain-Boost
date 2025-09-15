@@ -36,7 +36,7 @@ function About() {
             <li>
               <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
                 <img
-                  src="../../public/assets/images/icon-bullet-point.svg"
+                  src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
                 />
                 <h4 className="text-[22px] font-semibold">
@@ -53,7 +53,7 @@ function About() {
             <li>
               <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
                 <img
-                  src="../../public/assets/images/icon-bullet-point.svg"
+                  src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
                 />
                 <h4 className="text-[22px] font-semibold">
@@ -69,7 +69,7 @@ function About() {
             <li>
               <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
                 <img
-                  src="../../public/assets/images/icon-bullet-point.svg"
+                  src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
                 />
                 <h4 className="text-[22px] font-semibold">
@@ -91,7 +91,7 @@ function About() {
             <li>
               <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
                 <img
-                  src="../../public/assets/images/icon-bullet-point.svg"
+                  src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
                 />
                 <h4 className="text-[22px] font-semibold">
@@ -106,7 +106,7 @@ function About() {
             <li>
               <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
                 <img
-                  src="../../public/assets/images/icon-bullet-point.svg"
+                  src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
                 />
                 <h4 className="text-[22px] font-semibold">
@@ -121,7 +121,7 @@ function About() {
             <li>
               <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
                 <img
-                  src="../../public/assets/images/icon-bullet-point.svg"
+                  src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
                 />
                 <h4 className="text-[22px] font-semibold">Respect for time.</h4>
@@ -134,7 +134,7 @@ function About() {
             <li>
               <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
                 <img
-                  src="../../public/assets/images/icon-bullet-point.svg"
+                  src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
                 />
                 <h4 className="text-[22px] font-semibold">
@@ -169,7 +169,7 @@ function About() {
             </ul>
           </div>
           <img
-            src="../../public/assets/images/image-about-beyond-the-plate-small.webp"
+            src="../../assets/images/image-about-beyond-the-plate-small.webp"
             alt="img"
             className="rounded-lg max-w-full"
           />
