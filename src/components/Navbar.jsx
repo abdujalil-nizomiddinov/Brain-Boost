@@ -41,9 +41,13 @@ function Navbar() {
             </NavLink>
           </li>
         </ul>
-        <button className="p fbb btn w-[167px] h-[52px] max-[825px]:!hidden hover:opacity-95 transition-all duration-200 ease-out active:opacity-85 active:scale-95">
-          Browse recipes
-        </button>
+
+        <NavLink to="/recipes" className="p max-[825px]:!hidden">
+          <button className="p fbb btn w-[167px] h-[52px] max-[825px]:!hidden hover:opacity-95 transition-all duration-200 ease-out active:opacity-85 active:scale-95">
+            Browse recipes
+          </button>
+        </NavLink>
+
         <button
           onClick={() => {
             setToggleBars(!toggleBars);
@@ -99,9 +103,12 @@ function Navbar() {
             </NavLink>
           </li>
         </ul>
-        <button className="p fbb-2 btn w-[95%] h-[52px] hover:opacity-95 transition-all duration-200 ease-out active:opacity-85 active:scale-95">
-          Browse recipes
-        </button>
+
+        <Link to="/recipes" className="w-[95%] flex justify-center items-center p">
+          <button className="p fbb-2 btn w-[95%] h-[52px] hover:opacity-95 transition-all duration-200 ease-out active:opacity-85 active:scale-95">
+            Browse recipes
+          </button>
+        </Link>
       </section>
     </>
   );

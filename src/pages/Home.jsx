@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ReadyToCookSmarter from "../components/ReadyToCookSmarter";
 
 function Home() {
@@ -19,9 +20,11 @@ function Home() {
               tonight—no processed junk, no guesswork.
             </p>
           </div>
-          <button className="p z-10 mt-6 fbb btn w-[167px] h-[52px] hover:opacity-95 transition-all duration-200 ease-out active:opacity-85 active:scale-95">
-            Start exploring
-          </button>
+          <Link to="/about">
+            <button className="p z-10 mt-6 fbb btn w-[167px] h-[52px] hover:opacity-95 transition-all duration-200 ease-out active:opacity-85 active:scale-95">
+              Start exploring
+            </button>
+          </Link>
           <img
             className="mt-15 max-[375px]:mt-10 rounded-lg max-w-full"
             src="../../assets/images/image-home-hero-large.webp"

@@ -1,6 +1,5 @@
 import { Link, useParams } from "react-router-dom";
 import { useRecipes } from "../hooks/useRecipes";
-import { useState } from "react";
 
 function Details() {
   const { id } = useParams();
