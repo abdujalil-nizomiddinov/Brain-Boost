@@ -34,7 +34,7 @@ function About() {
           </h2>
           <ul className="flex flex-col ml-[35%] max-[1180px]:ml-0 gap-10 max-[1280px]:gap-[6px] max-[1280px]:mr-4">
             <li>
-              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
+              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-4">
                 <img
                   src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
@@ -43,7 +43,7 @@ function About() {
                   Cut through the noise.
                 </h4>
               </div>
-              <p className="max-[1180px]:translate-x-[73.5px] max-[1180px]:max-w-[600px]">
+              <p className="max-[1180px]:translate-x-[73.5px] max-[380px]:translate-x-[50px] max-[380px]:max-w-[245px] max-[380px]:text-xs max-[1180px]:max-w-[600px]">
                 The internet is bursting with recipes, yet most busy cooks still
                 default to take-away or packaged foods. We curate a tight
                 collection of fool-proof dishes so you can skip the scrolling
@@ -51,7 +51,7 @@ function About() {
               </p>
             </li>
             <li>
-              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
+              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-4">
                 <img
                   src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
@@ -60,14 +60,14 @@ function About() {
                   Empower home kitchens.
                 </h4>
               </div>
-              <p className="max-[1180px]:translate-x-[73.5px] max-[1180px]:max-w-[600px]">
+              <p className="max-[1180px]:translate-x-[73.5px] max-[380px]:translate-x-[50px] max-[380px]:max-w-[245px] max-[380px]:text-xs max-[1180px]:max-w-[600px]">
                 When you control what goes into your meals, you control how you
                 feel. Every recipe is built around unrefined ingredients and
                 ready in about half an hour of active prep.
               </p>
             </li>
             <li>
-              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
+              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-4">
                 <img
                   src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
@@ -76,7 +76,7 @@ function About() {
                   Make healthy look good.
                 </h4>
               </div>
-              <p className="max-[1180px]:translate-x-[73.5px] max-[1180px]:max-w-[600px]">
+              <p className="max-[1180px]:translate-x-[73.5px] max-[380px]:translate-x-[50px] max-[380px]:max-w-[245px] max-[380px]:text-xs max-[1180px]:max-w-[600px]">
                 High-resolution imagery shows you exactly what success looks
                 like—because we eat with our eyes first, and confidence matters.
               </p>
@@ -89,7 +89,7 @@ function About() {
           </h2>
           <ul className="flex flex-col ml-[35%] max-[1180px]:ml-0 gap-10 max-[1280px]:gap-[6px] max-[1280px]:mr-4">
             <li>
-              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
+              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-4">
                 <img
                   src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
@@ -98,13 +98,13 @@ function About() {
                   Whole ingredients first.
                 </h4>
               </div>
-              <p className="max-[1180px]:translate-x-[73.5px] max-[1180px]:max-w-[600px]">
+              <p className="max-[1180px]:translate-x-[73.5px] max-[380px]:translate-x-[50px] max-[380px]:max-w-[245px] max-[380px]:text-xs max-[1180px]:max-w-[600px]">
                 Fresh produce, grains, legumes, herbs, and quality fats form the
                 backbone of every recipe.
               </p>
             </li>
             <li>
-              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
+              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-4">
                 <img
                   src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
@@ -113,26 +113,26 @@ function About() {
                   Flavor without compromise.
                 </h4>
               </div>
-              <p className="max-[1180px]:translate-x-[73.5px] max-[1180px]:max-w-[600px]">
+              <p className="max-[1180px]:translate-x-[73.5px] max-[380px]:translate-x-[50px] max-[380px]:max-w-[245px] max-[380px]:text-xs max-[1180px]:max-w-[600px]">
                 Spices, citrus, and natural sweetness replace excess salt,
                 sugar, and additives.
               </p>
             </li>
             <li>
-              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
+              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-4">
                 <img
                   src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
                 />
                 <h4 className="text-[22px] font-semibold">Respect for time.</h4>
               </div>
-              <p className="max-[1180px]:translate-x-[73.5px] max-[1180px]:max-w-[600px]">
+              <p className="max-[1180px]:translate-x-[73.5px] max-[380px]:translate-x-[50px] max-[380px]:max-w-[245px] max-[380px]:text-xs max-[1180px]:max-w-[600px]">
                 Weeknight meals should slot into real schedules; weekend cooking
                 can be leisurely but never wasteful.
               </p>
             </li>
             <li>
-              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-10">
+              <div className="flex items-center translate-x-[-73.5px] max-[1180px]:translate-x-0 gap-4">
                 <img
                   src="../../assets/images/icon-bullet-point.svg"
                   alt="img"
@@ -141,7 +141,7 @@ function About() {
                   Sustainable choices.
                 </h4>
               </div>
-              <p className="max-[1180px]:translate-x-[73.5px] max-[1180px]:max-w-[600px]">
+              <p className="max-[1180px]:translate-x-[73.5px] max-[380px]:translate-x-[50px] max-[380px]:max-w-[245px] max-[380px]:text-xs max-[1180px]:max-w-[600px]">
                 Short ingredient lists cut down on food waste and carbon
                 footprint, while plant-forward dishes keep things
                 planet-friendly.

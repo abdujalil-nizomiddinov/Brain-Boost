@@ -1,9 +1,10 @@
+import { Link, useParams } from "react-router-dom";
 import { useRecipes } from "../hooks/useRecipes";
+import { useState } from "react";
 
 function Details() {
-  const { recipes, loading, error } = useRecipes({
-    limit: 3,
-  });
+  const { id } = useParams();
+  const { recipes, loading, error } = useRecipes({});
   console.log("Recipes:", recipes);
 
   return (
@@ -24,60 +25,70 @@ function Details() {
           <>
             {recipes && recipes.data?.length > 0 ? (
               <ul className="grid grid-cols-3 gap-8 my-6 max-[1200px]:grid-cols-2 max-[900px]:grid-cols-1 items-center justify-center p">
-                {recipes.data.map((recipe, index) => {
-                  const url = recipe.image.small.replace("./", "../../");
-                  return (
-                    <li
-                      key={index}
-                      className="my-8 p-2 shadow-[0px_0px_2px_0.1px_black] rounded-xl hover:scale-[1.01] p transition-transform duration-200 ease-out"
-                    >
-                      <picture>
-                        <source media="min-width:780px" srcSet={url} />
-                        <source media="max-width:780px" srcSet={url} />
-                        <source />
-                        <img
-                          src={url}
-                          alt={recipe.title}
-                          className="max-w-full rounded-xl w-full p"
-                        />
-                      </picture>
-                      <div className="flex flex-col items-start gap-4 justify-start mt-4 p">
-                        <h2 className="p pl-2 font-bold text-[15px] truncate max-w-full">
-                          {recipe.title}
-                        </h2>
-                        <p className="p pl-2 text-[13px]">{recipe.overview}</p>
-                        <div className="w-full">
-                          <span className="p pl-2 flex items-center justify-start gap-2 mb-2">
-                            <img
-                              src="../../assets/images/icon-servings.svg"
-                              alt="img"
-                            />
-                            {recipe.servings} servings
-                          </span>
-                          <div className="flex gap-4 pl-2">
-                            <span className="p flex items-center justify-center gap-2 mb-2">
+                {recipes.data
+                  .filter((recipe) => recipe.id != id)
+                  .slice(0, 3)
+                  .map((recipe, index) => {
+                    const url = recipe.image.small.replace("./", "../../");
+                    return (
+                      <li
+                        key={index}
+                        className="my-8 p-2 shadow-[0px_0px_2px_0.1px_black] rounded-xl hover:scale-[1.01] p transition-transform duration-200 ease-out"
+                      >
+                        <picture>
+                          <source media="min-width:780px" srcSet={url} />
+                          <source media="max-width:780px" srcSet={url} />
+                          <source />
+                          <img
+                            src={url}
+                            alt={recipe.title}
+                            className="max-w-full rounded-xl w-full p"
+                          />
+                        </picture>
+                        <div className="flex flex-col items-start gap-4 justify-start mt-4 p">
+                          <h2 className="p pl-2 font-bold text-[15px] truncate max-w-full">
+                            {recipe.title}
+                          </h2>
+                          <p className="p pl-2 text-[13px]">
+                            {recipe.overview}
+                          </p>
+                          <div className="w-full">
+                            <span className="p pl-2 flex items-center justify-start gap-2 mb-2">
                               <img
-                                src="../../assets/images/icon-cook-time.svg"
+                                src="../../assets/images/icon-servings.svg"
                                 alt="img"
                               />
-                              {recipe.cookMinutes} mins
+                              {recipe.servings} servings
                             </span>
-                            <span className="p flex items-center justify-center gap-2 mb-2">
-                              <img
-                                src="../../assets/images/icon-prep-time.svg"
-                                alt="img"
-                              />
-                              {recipe.prepMinutes} mins
-                            </span>
+                            <div className="flex gap-4 pl-2">
+                              <span className="p flex items-center justify-center gap-2 mb-2">
+                                <img
+                                  src="../../assets/images/icon-cook-time.svg"
+                                  alt="img"
+                                />
+                                {recipe.cookMinutes} mins
+                              </span>
+                              <span className="p flex items-center justify-center gap-2 mb-2">
+                                <img
+                                  src="../../assets/images/icon-prep-time.svg"
+                                  alt="img"
+                                />
+                                {recipe.prepMinutes} mins
+                              </span>
+                            </div>
+                            <Link
+                              to={`/details/${recipe.id}`}
+                              className="w-full p"
+                            >
+                              <button className="btn fbb-2 w-full h-12 p">
+                                View Recipe
+                              </button>
+                            </Link>
                           </div>
-                          <button className="btn fbb-2 w-full h-12 p">
-                            View Recipe
-                          </button>
                         </div>
-                      </div>
-                    </li>
-                  );
-                })}
+                      </li>
+                    );
+                  })}
               </ul>
             ) : (
               <div className="absolute inset-0 flex items-center justify-center">
