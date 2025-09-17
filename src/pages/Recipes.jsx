@@ -42,7 +42,10 @@ function Recipes() {
         <div className="flex max-[940px]:flex-col p gap-4">
           <div className="relative inline-block p text-left">
             <button
-              onClick={() => setOpenPrep(!openPrep)}
+              onClick={() => {
+                setOpenPrep(!openPrep);
+                setOpenCook(false);
+              }}
               className={`
                 inline-flex p items-center justify-between w-[170px] rounded-md border border-transparent hover:border-green-900 focus-visible:border-green-900 transition-all duration-200 shadow-[0px_0px_2px_0.1px_black] ease-out px-4 py-2 text-green-900 font-medium hover:bg-green-50 focus:outline-none
               `}
@@ -101,7 +104,10 @@ function Recipes() {
           </div>
           <div className="relative inline-block p text-left">
             <button
-              onClick={() => setOpenCook(!openCook)}
+              onClick={() => {
+                setOpenCook(!openCook);
+                setOpenPrep(false);
+              }}
               className={`
                   inline-flex p items-center z-20 max-[700px]:z-0 relative justify-between w-[170px] rounded-md border border-transparent hover:border-green-900 focus-visible:border-green-900 transition-all duration-200 shadow-[0px_0px_2px_0.1px_black] ease-out px-4 py-2 text-green-900 font-medium hover:bg-green-50 focus:outline-none
               `}
